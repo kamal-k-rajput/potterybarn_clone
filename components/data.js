@@ -1,0 +1,2 @@
+
+let furniture_data = {};
