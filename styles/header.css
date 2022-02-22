@@ -1,0 +1,137 @@
+body {
+  width: 100%;
+  margin: 0;
+  font-family: TT-Norms-Pro, "Open Sans", Helvetica, Arial, sans-serif;
+}
+#cross_brand {
+  margin: 8px 15px;
+  height: 20px;
+}
+.pb-family {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 12px;
+}
+.hp-link {
+  cursor: pointer;
+}
+.nav-extended-link:hover {
+  border-bottom: 2px solid black;
+  /* padding:2px; */
+}
+ul,
+li {
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+}
+.nav-extended {
+  margin: 2px;
+  padding: 0;
+}
+.pb-family-right {
+  flex: 3;
+  padding-left: 20%;
+}
+.pb-family-left {
+  flex: 7;
+}
+#search-logo-cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 20px;
+  padding: 15px;
+}
+.user-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 3;
+  font-size: 11px;
+  line-height: 14px;
+}
+#icon-pb {
+  flex: 4;
+  font-family: TT-Norms-Pro, "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 3rem;
+  height: 2.25rem;
+  font-weight: 300;
+  line-height: 10px;
+  letter-spacing: 14px;
+  tab-size: 4;
+}
+#search-field {
+  flex: 3;
+}
+.separated-list {
+  display: flex;
+}
+.nav-secondary {
+  position: relative;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  width: 100%;
+  height: 28px;
+}
+.nav-secondary li .dropdown {
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 100%;
+  height: 60vh;
+  background-color: white;
+  z-index: 2;
+  margin: 5px 0 0 0;
+}
+.nav-secondary li:hover > .dropdown {
+  display: block;
+}
+.nav-secondary li {
+  margin: 0 2%;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 32px;
+}
+.nav-link-extended {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+  margin-bottom: 0;
+}
+
+#sustainibility {
+  justify-content: center;
+}
+#sustainibility > ul {
+  margin: 0 1%;
+}
+.nav-link-extended > ul > img {
+  width: 200px;
+}
+.nav-link-extended > ul > p {
+  line-height: 14px;
+  font-weight: 600;
+  font-size: 12px;
+}
+.nav-link-extended > ul > li {
+  line-height: 20px;
+  font-weight: 300;
+  font-size: 12px;
+}
+#hp-hr-line {
+  position: fixed;
+  height: 1px;
+  color: black;
+  width: 100%;
+  border-bottom: 2px solid grey;
+  margin-top: 0;
+}

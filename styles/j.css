@@ -804,8 +804,8 @@ header {
   .separated-lists
   .my-store-component.cross-brand-bar
   .my-store-module {
-    padding: 0.305rem 0px;
-    height: auto;
+  padding: 0.305rem 0px;
+  height: auto;
     min-width: 0px;
     width: auto;
     margin-right: 0px;
