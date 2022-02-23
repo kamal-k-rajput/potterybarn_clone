@@ -92,7 +92,13 @@
       //append
       div.append(image, name, price, wish_add_div);
       document.querySelector("#container").append(div);
+
+      div.onclick = () =>{
+        window.location.href = "productInfo.html";
+      }
     });
+
+    
   }
 
 //   function addToCart(data) {
@@ -101,3 +107,5 @@
 //     localStorage.setItem("CartItems", JSON.stringify(cartArr));
 //     alert("added successfully");
 //   }
+
+
