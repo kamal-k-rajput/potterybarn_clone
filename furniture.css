@@ -60,7 +60,7 @@ ul {
  .nav-link{
      padding: 8px 0px 0px;
      font-size: 13px;
-     line-break: none;
+     letter-spacing: 1px;
  }
  .container{
      display: grid;
@@ -87,6 +87,7 @@ ul {
  .left-nav-heading{
     font-weight: lighter;
     line-height: 20px;
+    letter-spacing: 1px;
  }
  #bottom{
     display: flex;
@@ -163,7 +164,8 @@ ul {
 }
 .related-ul > li{
     margin: 0px 0px 10px 0px;
-    font-size: 13px;;
+    font-size: 13px;
+    letter-spacing: 0.5px;
 }
 #breadcrumbs , #main{
     padding: 10px 20px;
