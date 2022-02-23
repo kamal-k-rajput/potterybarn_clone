@@ -273,7 +273,7 @@ let  header=()=> {
             <!-- sustainibility dropdown starts here -->
 
             <div class="dropdown">
-              <div class="nav-link-extended" id="sustainibility">
+              <div class="nav-link-extended">
                 <ul>
                   <img
                     src="https://assets.pbimgs.com/pbimgs/rk/images/dp/ecm/202141/1804/037/331.jpg"

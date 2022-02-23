@@ -55,7 +55,7 @@ let footer = () => {
               <input type="email" />
               <button>SIGNUP</button>
             </div>
-            <p>FOLLOW US</p>
+            <h3>FOLLOW US</h3>
             <ul>
               <li>insta</li>
               <li>facebook</li>
