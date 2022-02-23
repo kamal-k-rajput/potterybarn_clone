@@ -41,19 +41,19 @@ let  header=()=> {
           <div id="icon-pb">POTTERYBARN</div>
           <div class="user-links">
             <div class="separated-list">
-              <div></div>
+              <div><i class="fas fa-user"></i></div>
               <div class="hp-link">My Account</div>
             </div>
             <div class="separated-list">
-              <div></div>
+              <div><i class="fas fa-hand-holding-heart"></i></div>
               <div class="hp-link">Wedding Registry</div>
             </div>
             <div class="separated-list">
-              <div></div>
+              <div><i class="fas fa-heart"></i></div>
               <div class="hp-link">Favorites</div>
             </div>
             <div class="separated-list">
-              <div></div>
+              <div><i class="fas fa-shopping-cart"></i></div>
               <div class="hp-link">Cart</div>
             </div>
           </div>
