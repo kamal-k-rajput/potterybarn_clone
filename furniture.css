@@ -162,6 +162,14 @@ ul {
     margin: 0px 0px 16px 0px;
     padding: 10px 15px;
 }
+.nav-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.underline-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
 .related-ul > li{
     margin: 0px 0px 10px 0px;
     font-size: 13px;
