@@ -23,3 +23,10 @@ body > footer > p {
   color: #010101;
   text-align: center;
 }
+
+#footer-section > div > ul > li {
+  cursor: pointer;
+}
+#footer-section > div > ul > h3 {
+  cursor: default;
+}

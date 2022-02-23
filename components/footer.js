@@ -1,9 +1,7 @@
-
-
 let footer = () => {
-    return `
+  return `
      <div id="footer-section">
-        <div class="column">
+        <div>
           <ul>
             <h3>CUSTOMER SERVICE</h3>
             <li>Contact Us</li>
@@ -16,7 +14,7 @@ let footer = () => {
             <li>International Orders</li>
           </ul>
         </div>
-        <div class="column">
+        <div >
           <ul>
             <h3>ABOUT Us</h3>
             <li>Our Story</li>
@@ -33,7 +31,7 @@ let footer = () => {
             <li>Corporate</li>
           </ul>
         </div>
-        <div class="column">
+        <div >
           <ul>
             <h3>DSIGN SERVICES</h3>
             <li>Free Interior Design</li>
@@ -50,7 +48,7 @@ let footer = () => {
             <li>View Online Catalog</li>
           </ul>
         </div>
-        <div class="column">
+        <div >
           <ul>
             <p>Join our VIP list for inspiration, new arrivals & more.</p>
             <div id="footer-email-sign-up">
@@ -76,6 +74,6 @@ let footer = () => {
     
     
     `;
-}
+};
 
 export default footer;

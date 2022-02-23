@@ -10,14 +10,19 @@ body {
 .pb-family {
   display: flex;
   justify-content: space-between;
-  cursor: pointer;
   font-size: 11px;
   font-weight: 300;
   line-height: 12px;
 }
+
 .hp-link {
   cursor: pointer;
 }
+.pb-family-left,
+.pb-family-right > li {
+  cursor: pointer;
+}
+
 .nav-extended-link:hover {
   border-bottom: 2px solid black;
   /* padding:2px; */
@@ -104,8 +109,8 @@ li {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
+  margin: 0 auto;
 }
 
 #sustainibility {
@@ -126,12 +131,43 @@ li {
   line-height: 20px;
   font-weight: 300;
   font-size: 12px;
+  letter-spacing: 0.2px;
+    line-height: 20px;
+    padding-bottom: 8px;
 }
 #hp-hr-line {
-  position: fixed;
-  height: 1px;
   color: black;
   width: 100%;
-  border-bottom: 2px solid grey;
+  border-bottom: 1px solid rgb(148, 144, 144);
   margin-top: 0;
+}
+
+
+#header-nav-menu > li > .dropdown {
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 100%;
+  /* height: 100vh; */
+  background-color: white;
+  z-index: 2;
+  margin: 5px 0 0px 0;
+  border: 2px solid green; 
+  padding-bottom:40px;
+}
+#header-nav-menu {
+  position: relative;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  width: 100%;
+  height: 28px;
+align-items: center;
+}
+#header-nav-menu >li:hover>.dropdown {
+  display: block;
+}
+#header-nav-menu >li{
+  margin: 0 10px;
 }
