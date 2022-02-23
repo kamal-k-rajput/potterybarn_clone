@@ -1,8 +1,5 @@
-
-
-let  header=()=> {
-
-    return `  <div id="cross_brand" class="pb-family">
+let header = () => {
+  return `  <div id="cross_brand" class="pb-family">
         <ul class="pb-family-left pb-family">
           <li>PB Contract</li>
           <li>PB/Apartment</li>
@@ -17,19 +14,19 @@ let  header=()=> {
         <ul class="pb-family-right pb-family">
           <li>
             <div>My Store</div>
-            <div></div>
+            <div><i class="fas fa-map-marker-alt"></i></div>
           </li>
           <li>
             <div>Key Rewards</div>
-            <div></div>
+            <div><i class="fas fa-gift"></i></div>
           </li>
           <li>
             <div>Track Order</div>
-            <div></div>
+            <div><i class="fas fa-truck-moving"></i></div>
           </li>
           <li>
             <div>Ship To</div>
-            <div></div>
+            <div><i class="fas fa-map-marked-alt"></i></div>
           </li>
         </ul>
       </div>
@@ -1232,7 +1229,5 @@ let  header=()=> {
     
     
     `;
-    
-
-}
+};
 export default header;

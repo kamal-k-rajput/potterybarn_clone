@@ -12,17 +12,30 @@ body {
   justify-content: space-between;
   font-size: 11px;
   font-weight: 300;
-  line-height: 12px;
+  line-height: 22px;
+  vertical-align: baseline;
 }
 
 .hp-link {
   cursor: pointer;
 }
-.pb-family-left,
-.pb-family-right > li {
-  cursor: pointer;
+.pb-family-right > li > div > i {
+  margin: 0 3px;
 }
 
+.pb-family-right > li {
+  cursor: pointer;
+  display: flex;
+}
+.pb-family-left > li {
+  cursor: pointer;
+}
+.pb-family-left > li > div:hover {
+  border-bottom: 2px solid grey;
+}
+.pb-family-right > li > div:hover {
+  border-bottom: 2px solid grey;
+}
 .nav-extended-link:hover {
   border-bottom: 2px solid black;
   /* padding:2px; */
