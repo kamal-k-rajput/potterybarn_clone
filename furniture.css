@@ -5,6 +5,7 @@
     height: auto;
     width: 100%;
     padding: 0px;
+    margin: 0px;
     font-family: TT-Norms-Pro,Open Sans,Helvetica,Arial,sans-serif;
 }
 #offer_tags{
@@ -47,12 +48,10 @@ ul {
      min-height: 18.75rem;
  }
  #sidebar {
-     flex: 1;
-     padding: 0px 30px 0px 0px;
-     margin-right: 1rem;
+     flex: 3;
  }
  #prod{
-     flex: 9;     
+     flex: 7;     
  }
  .left-ul-nav > li {
      padding: 10px 0px 0px;
