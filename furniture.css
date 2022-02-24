@@ -27,13 +27,12 @@ ul {
     padding: 0;
  }
  #breadcrumbs {
-     height: 800px;
+     max-height: 800px;
      max-width: 100%;
      align-items: center;
      justify-content: center;
  }
  #breadcrumbs > img{
-     height: 700px;
      max-width: 100%;
      margin: auto;
      max-height: 100%;
@@ -49,9 +48,12 @@ ul {
  }
  #sidebar {
      flex: 3;
+     width: auto; 
+     padding-right: 0.625rem;
  }
  #prod{
-     flex: 7;     
+     flex: 8;   
+     width: auto; 
  }
  .left-ul-nav > li {
      padding: 10px 0px 0px;
@@ -102,6 +104,10 @@ ul {
     margin: 34px 0px 96px;
     padding: 60px 0px 0px;
 }
+.head > h1{
+    font-size:27px; 
+    font-weight:lighter;
+}
 .carousal-conatiner3{
     flex: 3;
     padding: 10px;
@@ -129,7 +135,6 @@ ul {
     grid-template-columns: repeat(4,1fr);
     grid-gap: 20px;
     margin: auto;
-
 }
 #prod-title > h2{
     margin: 0px 0px 16px;
@@ -175,8 +180,8 @@ ul {
     letter-spacing: 0.5px;
 }
 #breadcrumbs , #main{
-    padding: 10px 20px;
-    margin: 0px 50px 0px 50px;
+    padding: 20px 60px;
+    margin: 0px;
 }
 .right-heading{
     padding:0px 8px;
@@ -208,6 +213,12 @@ ul {
     display: flex;
     flex-direction: column;
     padding: 2.5rem 0.625rem 0.625rem 0.625rem;
+  }
+#prod-cell{
+    flex: 9;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(100px,1fr);
 }
 }
 @media (max-width: 700px){
