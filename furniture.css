@@ -199,13 +199,13 @@ ul {
 }
 @media (max-width: 1199px){
 .container {
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(3,1fr);
         grid-gap: 10px;
         padding: 0 0.5rem;
 }}
 @media (max-width: 991.98px){
 .container {
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(2,1fr);
         grid-gap: 10px;
         padding: 0 0.5rem;
 }
@@ -217,7 +217,7 @@ ul {
 #prod-cell{
     flex: 9;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(4,1fr);
     grid-template-rows: repeat(100px,1fr);
 }
 }
