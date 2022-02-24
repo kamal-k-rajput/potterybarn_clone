@@ -1,0 +1,86 @@
+.nav {
+    display: flex;
+    background-color: rgb(28, 41, 56);
+    color: white;
+    height: 50px;
+    padding: 25px 0 0 20px;
+    border-radius: 20px;
+    /* top right bottom left */
+  }
+  .left {
+    width: 70%;
+  }
+  .right {
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  #container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+  }
+  #flex {
+    display: flex;
+    justify-content: space-around;
+  }
+  #flex > p:nth-child(2) {
+    text-decoration: line-through;
+  }
+
+  select {
+    margin-top: 50px;
+  }
+
+  #container>div>img {
+    width: 100%;
+  }
+
+  @media only screen and (min-width: 0px) and (max-width: 320px) {
+    #container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  /* medium screens */
+  @media only screen and (min-width: 321px) and (max-width: 720px) {
+    #container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+
+
+  #wishListBtn{
+    background-color: pink;
+    color: white;
+    border: none;
+    padding: 0px 30px;
+  }
+  #wishListBtn:hover {
+    background-color: black;
+    cursor: pointer;
+    color: white;
+  }
+
+
+  #addtoCartBtn {
+    border: none;
+    background-color: pink;
+    color: white;
+    padding: 0px 20px;
+  }
+  #addtoCartBtn:hover {
+    background-color: black;
+    cursor: pointer;
+    color: white;
+  }
+
+  #wish_add_div{
+      display: flex;
+      justify-content: space-between;
+  }
