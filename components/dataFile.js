@@ -1,4 +1,4 @@
-function sofaDataFn() {
+ function sofaDataFn() {
 
 
     var sofaData = [
@@ -290,6 +290,17 @@ function sofaDataFn() {
       ];
     
       localStorage.setItem("sofaData", JSON.stringify(sofaData));
+
+
+
+      var counter = 1;
+  for (var i = 0; i < sofaData.length; i++) {
+    sofaData[i]["product_id"] = counter;
+    
+    //console.log(sofaData[i]["product_id"]);
+    counter++;
+  }
+  localStorage.setItem("sofaData", JSON.stringify(sofaData));
 
 }
 export default sofaDataFn

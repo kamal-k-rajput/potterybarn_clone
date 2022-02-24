@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style\cart.css">
+</head>
+<body>
+    
+    <!---------- Cart Page Start ------------->
+    <div class="icon-div">
+        <p class="icon">
+          <a href="home.html" class="btn"><i class="fa fa-home"></i></a> / <span> <a href="Personalinfo.html">Acount</a></span> /  
+          <span> <a href="wishlist.html">Wishlist</a></span>
+        </p><br>
+        <p class="icon">
+          <a href="home.html" class="btn"><i class="fa fa-user"></i></a> / <span class="name"></span> 
+          <span class="name"></span> <span> <a href="login.html.html"></a></span>
+        </p>
+        
+      </div>
+    
+  
+      <!-- left Portion -->
+      <div id="cart-container">
+  
+          <!-- Left Box -->
+          <div class="cart-left">
+              <div class="cart_order_summary">
+                  <div class="smry-box">
+                      <div class="smry-disp">
+                          <div class="smry-logo">
+                              <img src="https://in.sugarcosmetics.com/desc-images/shopping_cart.svg" width="20px" height="20px" class="" alt="Cart Logo">
+                          </div>
+                          <div class="smry-txt">Order Summary</div>
+                      </div>
+                      <div class="smry-cart-total" id="total">Card Total : 0</div>
+                  </div>
+                  <div class="cart-product">
+                      <div>
+                          
+                      </div>
+                      
+                      <div class="product-spec"></div>
+                  </div>
+              </div>
+          </div>
+          <!-- Right Box -->
+          <div class="cart-right">
+            <div class="UserInfo">
+              <div class="rt-same">
+                <p class="txt-big">Order Summary</p> 
+              </div>
+              <div class="fname-phno">
+                <div class="fname">
+                  <p id="countItem" class="txt-med"></p>
+                </div>
+                <div class="usrPhno">
+                  <p id="totalPrice" class="txt-med">P</p>
+                </div>
+              </div>
+              <div class="rt-same">
+                <p>Total does not include shipping, gift wrap, discounts & tax. </p> 
+              </div>
+            </div>
+            <hr>
+            <div class="rt-same">
+                <img src="https://in.sugarcosmetics.com/desc-images/Offers_price_details.svg" alt=" logo">
+                <div class="brand-card-points-promo">
+                    <div class="brand-card-points-promo-text">
+                        <p>Earn 10% back ($1,359.10) in rewards</p>
+                        <p>during your first 30 days as a cardmember<sup>2</sup>, or get 12-month special financing on purchases of
+                        $750+.<sup>3</sup> </p><a
+                            href="" >Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="rt-same">
+              <!-- <img src="https://in.sugarcosmetics.com/desc-images/Offers_icon.svg" alt="Offer icon"> -->
+                <p class="txt-small">Slect Payment Method</p>
+              <div id="summary-radio-group" class="summary-radio-group">
+                <div class="radio-button">
+                <input id="creditCard" name="paymentOptions" type="radio" value="creditCard" checked="true">
+                <label for="creditCard">
+                <span class="logo-group">
+                <img src="https://assets.pbimgs.com/pbimgs/ab/images/i/202203/0031/images/shoppingcart/order-summary/Visa_Inc._logo.svg" alt="">
+                <img src="https://assets.pbimgs.com/pbimgs/ab/images/i/202204/0006/images/shoppingcart/order-summary/mastercard.svg" alt="">
+                <img src="https://assets.pbimgs.com/pbimgs/ab/images/i/202204/0006/images/shoppingcart/order-summary/amex.svg" alt="">
+                <img src="https://assets.pbimgs.com/pbimgs/ab/images/i/202204/0006/images/shoppingcart/order-summary/discover.svg" alt="">
+                </span>
+                <span>and more</span>
+                </label>
+                </div>
+                <div class="radio-button">
+                <input id="payPal" name="paymentOptions" type="radio" value="payPal">
+                <label for="payPal">
+                <span> <img class="payment-provider-img" src="https://assets.pbimgs.com/pbimgs/ab/images/i/202202/0001/images/shoppingcart/order-summary/PayPal_logo.svg" alt=""></span>
+                </label>
+                </div>
+                <div class="applePayRadio radio-button hidden" abtestshow="true">
+                <input id="applePay" name="paymentOptions" type="radio" value="applePay">
+                <label for="applePay">
+                <span><img class="payment-provider-img" src="https://assets.pbimgs.com/pbimgs/ab/images/i/202204/0006/images/shoppingcart/order-summary/Apple_Pay.svg" alt=""></span>
+                </label>
+                </div>
+                </div>
+            </div>
+            <div class="discount-txt">
+              <div class="rt-same">
+                <img src="https://in.sugarcosmetics.com/desc-images/GiftCard.svg" alt="Offer icon">
+                <p>Discount Code:</p> 
+              </div>
+              </div discount-aply>
+              <form>
+                <input type="text" id="coupon" placeholder="Enter Coupon" />
+                <input type="submit" id="coupn-apply" value="Apply">
+              </form>
+              <h3 class="invalid-coupon"></h3>
+              <h3 class="valid-coupon"></h3>
+              
+              <div class="rt-same">
+                <img src="https://in.sugarcosmetics.com/desc-images/PriceDetails.svg" alt="icon">
+                <p>Price Details</p> 
+              </div>
+  
+              <div class="price-table">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td >Cart Sub Total</td>
+                            <td id="cart-total"></td>
+                        </tr>
+                        <tr>
+                            <td>Shipping Cost:</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>Discount Applied:</td>
+                            <td id="disc-applied"></td>
+                        </tr>
+                        <tr>
+                            <td >Amount Payable:</td>
+                            <td id="pay-amount"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div clas="checkout-btn">
+                    <button id="checkOut">CHECKOUT</button>
+                </div>
+            </div>
+  
+            </div>
+          </div>
+      </div>
+    
+</body>
+</html>
+
+
+
+<script>
+//     var cart = document.querySelector("#cart");
+//    cart.addEventListener('click', function(){
+//      window.location.href ="cartPage.html"
+//    })
+//     var wishlist = document.querySelector("#wishlist");
+//    wishlist.addEventListener('click', function(){
+//      window.location.href ="wishlist.html"
+//    })
+//     var discount = document.querySelector("#discount");
+//    discount.addEventListener('click', function(){
+//      window.location.href ="discount.html"
+//    })
+     
+//       var logo = document.querySelector(".logo");
+//    logo.addEventListener('click', function(){
+//      window.location.href ="homepage.html"
+//    })
+//    </script>
+   <script src="scripts/cart.js"></script>
+       <script src="https://kit.fontawesome.com/74404664ae.js" crossorigin="anonymous"></script>
+   
