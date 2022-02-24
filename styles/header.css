@@ -1,0 +1,192 @@
+body {
+  width: 100%;
+  margin: 0;
+  font-family: TT-Norms-Pro, "Open Sans", Helvetica, Arial, sans-serif;
+}
+#cross_brand {
+  margin: 8px 15px;
+  height: 20px;
+}
+.pb-family {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 22px;
+  vertical-align: baseline;
+}
+
+.hp-link {
+  cursor: pointer;
+}
+.pb-family-right > li > div > i {
+  margin: 0 3px;
+}
+
+.pb-family-right > li {
+  cursor: pointer;
+  display: flex;
+}
+.pb-family-left > li {
+  cursor: pointer;
+}
+.pb-family-left > li > div:hover {
+  border-bottom: 2px solid grey;
+}
+.pb-family-right > li > div:hover {
+  border-bottom: 2px solid grey;
+}
+.nav-extended-link:hover {
+  border-bottom: 2px solid black;
+  /* padding:2px; */
+}
+
+ul,
+li {
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 0;
+}
+.pb-family-right {
+  flex: 3;
+  padding-left: 20%;
+}
+.pb-family-left {
+  flex: 7;
+}
+#search-logo-cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 20px;
+  padding: 15px;
+}
+.user-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 3;
+  font-size: 11px;
+  line-height: 14px;
+}
+#icon-pb {
+  flex: 4;
+  font-family: TT-Norms-Pro, "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 3rem;
+  height: 2.25rem;
+  font-weight: 300;
+  line-height: 10px;
+  letter-spacing: 14px;
+  tab-size: 4;
+}
+.separated-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#search-field {
+  flex: 3;
+  display: flex;
+}
+.separated-list {
+  display: flex;
+}
+.nav-secondary {
+  position: relative;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  width: 100%;
+  height: 28px;
+}
+.nav-secondary li .dropdown {
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 100%;
+  height: 75vh;
+  background-color: white;
+  z-index: 2;
+  margin: 5px 0 0 0;
+}
+.nav-secondary li:hover > .dropdown {
+  display: block;
+}
+.nav-secondary li {
+  margin: 0 2%;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 32px;
+}
+.nav-link-extended {
+  /* padding-top: 20px; */
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+  justify-content: center;
+  /* margin-bottom: 0; */
+  margin: 0 auto;
+}
+.nav-link-extended > ul > img {
+  width: 200px;
+}
+.nav-link-extended > ul > p {
+  line-height: 14px;
+  font-weight: 600;
+  font-size: 12px;
+}
+.nav-link-extended > ul {
+  margin: 0 1%;
+}
+.nav-link-extended > ul > li {
+  line-height: 20px;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+  line-height: 20px;
+  padding-bottom: 8px;
+}
+#hp-hr-line {
+  color: black;
+  width: 100%;
+  border-bottom: 1px solid rgb(148, 144, 144);
+  margin-top: 0;
+}
+
+#header-nav-menu > li > .dropdown {
+  display: none;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 100%;
+  /* height: 100vh; */
+  background-color: white;
+  z-index: 2;
+  margin: 0px 0 0px 0;
+  /* border: 2px solid green;  */
+  padding: 10px;
+}
+#header-nav-menu {
+  position: relative;
+  display: flex;
+  margin: 0;
+  justify-content: center;
+  width: 100%;
+  height: 22px;
+}
+#header-nav-menu > li:hover > .dropdown {
+  display: block;
+}
+#header-nav-menu > li {
+  margin: 0 10px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #010101;
+}
+#header-nav-menu > li:hover {
+  border-bottom: 2px solid black;
+}
