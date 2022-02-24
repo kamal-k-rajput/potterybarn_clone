@@ -29,3 +29,7 @@ body > footer > p {
 #footer-section > div > ul > h3 {
   cursor: default;
 }
+#ft-follow-us{
+  display: flex;
+  justify-content: space-between;
+}

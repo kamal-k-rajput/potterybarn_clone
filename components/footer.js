@@ -52,16 +52,16 @@ let footer = () => {
           <ul>
             <p>Join our VIP list for inspiration, new arrivals & more.</p>
             <div id="footer-email-sign-up">
-              <input type="email" />
+              <input type="email" placeholder="enter mail "/>
               <button>SIGNUP</button>
             </div>
             <h3>FOLLOW US</h3>
-            <ul>
-              <li>insta</li>
-              <li>facebook</li>
-              <li>pinterest</li>
-              <li>youtube</li>
-              <li>twitter</li>
+            <ul id="ft-follow-us"->
+              <li><i class="fab fa-instagram"></i></li>
+              <li><i class="fab fa-facebook"></i></li>
+              <li><i class="fab fa-pinterest"></i></li>
+              <li><i class="fab fa-youtube"></i></li>
+              <li><i class="fab fa-twitter"></i></li>
             </ul>
           </ul>
         </div>
