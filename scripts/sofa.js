@@ -1,13 +1,15 @@
 
+import sofaDataFn from "/components/dataFile.js";
 
-
-  var sofaData = JSON.parse(localStorage.getItem("sofaData"));
-  //console.log(mensData)
-  var cartArr = JSON.parse(localStorage.getItem("CartItems")) || [];
-  // window.addEventListener("load",function(){
-  //   displayData(sofaData);
-  // })
-  displayData(sofaData);
+sofaDataFn();
+//  console.log(data);
+var sofaData = JSON.parse(localStorage.getItem("sofaData"));
+//console.log(mensData)
+var cartArr = JSON.parse(localStorage.getItem("CartItems")) || [];
+// window.addEventListener("load",function(){
+//   displayData(sofaData);
+// })
+displayData(sofaData);
 
 //   function filterCat() {
 //     var selected = document.querySelector("#brandFilter").value;
@@ -41,65 +43,61 @@
 //     displayData(sofaData);
 //   }
 
-  function displayData(sofaData) {
-    document.querySelector("#container").innerHTML = "";
-    console.log(sofaData);
-    sofaData.map(function (data) {
-      //console.log(data);
-      var div = document.createElement("div");
-      //img,name,price,strikedoffprice
+function displayData(sofaData) {
+  document.querySelector("#container").innerHTML = "";
+  console.log(sofaData);
+  sofaData.map(function (data) {
+    //console.log(data);
+    var div = document.createElement("div");
+    //img,name,price,strikedoffprice
 
-      // image creation
-      var image = document.createElement("img");
-      image.setAttribute("src", data.image_url);
+    // image creation
+    var image = document.createElement("img");
+    image.setAttribute("src", data.image_url);
 
-      // name creation
+    // name creation
 
-      var name = document.createElement("p");
-      name.textContent = data.name;
+    var name = document.createElement("p");
+    name.textContent = data.name;
 
-      // price creation
+    // price creation
 
-      var price = document.createElement("p");
-      price.textContent = data.price;
+    var price = document.createElement("p");
+    price.textContent = data.price;
 
-      //Add to wishlist
+    //Add to wishlist
     var wishListBtn = document.createElement("button");
-    wishListBtn.id="wishListBtn"
+    wishListBtn.id = "wishListBtn";
     wishListBtn.textContent = "Wishlist";
-    
+
     wishListBtn.addEventListener("click", function () {
       wishList(data);
     });
 
+    // add to cart button creation
 
-      // add to cart button creation
+    var addtoCartBtn = document.createElement("button");
+    addtoCartBtn.id = "addtoCartBtn";
+    addtoCartBtn.textContent = "Add To Cart";
 
-      var addtoCartBtn = document.createElement("button");
-      addtoCartBtn.id="addtoCartBtn"
-      addtoCartBtn.textContent = "Add To Cart";
-      
-      addtoCartBtn.addEventListener("click", function () {
-        addToCart(data);
-      });
-      
-      
-      //wish-add-div creare
-      var wish_add_div =document.createElement("div");
-      wish_add_div.id="wish_add_div";
-      wish_add_div.append(wishListBtn,addtoCartBtn )
-
-      //append
-      div.append(image, name, price, wish_add_div);
-      document.querySelector("#container").append(div);
-
-      div.onclick = () =>{
-        window.location.href = "productInfo.html";
-      }
+    addtoCartBtn.addEventListener("click", function () {
+      addToCart(data);
     });
 
-    
-  }
+    //wish-add-div creare
+    var wish_add_div = document.createElement("div");
+    wish_add_div.id = "wish_add_div";
+    wish_add_div.append(wishListBtn, addtoCartBtn);
+
+    //append
+    div.append(image, name, price, wish_add_div);
+    document.querySelector("#container").append(div);
+
+    div.onclick = () => {
+      window.location.href = "productInfo.html";
+    };
+  });
+}
 
 //   function addToCart(data) {
 //     console.log(data, "data");
@@ -107,5 +105,3 @@
 //     localStorage.setItem("CartItems", JSON.stringify(cartArr));
 //     alert("added successfully");
 //   }
-
-
