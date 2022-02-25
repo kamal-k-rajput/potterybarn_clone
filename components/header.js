@@ -33,8 +33,9 @@ let header = () => {
       <div id="header-main-container">
         <div id="search-logo-cart">
           <div id="search-field">
-            <input type="text" />
-          </div>
+            <input type="text"  id="header-search-field" placeholder='Search'/>
+          <i class="fas fa-search"></i>
+            </div>
           <div id="icon-pb">POTTERYBARN</div>
           <div class="user-links">
             <div class="separated-list">

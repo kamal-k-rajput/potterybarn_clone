@@ -22,7 +22,9 @@ body {
 .pb-family-right > li > div > i {
   margin: 0 3px;
 }
-
+.hp-link:hover {
+  border-bottom: 2px solid grey;
+}
 .pb-family-right > li {
   cursor: pointer;
   display: flex;
@@ -30,7 +32,7 @@ body {
 .pb-family-left > li {
   cursor: pointer;
 }
-.pb-family-left > li > div:hover {
+.pb-family-left > li:hover {
   border-bottom: 2px solid grey;
 }
 .pb-family-right > li > div:hover {
@@ -89,6 +91,15 @@ li {
 #search-field {
   flex: 3;
   display: flex;
+  border-bottom: 1px solid black;
+  margin-right: 5%;
+  width: 70%;
+  justify-content: space-between;
+}
+#header-search-field {
+  border: none;
+  width: 100%;
+  outline:none;
 }
 .separated-list {
   display: flex;
