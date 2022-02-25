@@ -609,7 +609,7 @@
         },
       ];
 
-    
+     //Store sofa data & outdoorData in local storage
       localStorage.setItem("sofaData", JSON.stringify(sofaData));
 
       localStorage.setItem("outdoorData", JSON.stringify(outdoorData));

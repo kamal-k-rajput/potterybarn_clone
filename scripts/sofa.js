@@ -31,47 +31,10 @@ sofaDataFn();
     cartArr = []; // initialize it with empty array;
     localStorage.setItem("cartItems", JSON.stringify(cartArr));
   } 
-  // window.addEventListener("load",function(){
-  //   displayData(sofaData);
-  // })
+
   displayData(sofaData);
 
 
-
-
-//   function filterCat() {
-//     var selected = document.querySelector("#brandFilter").value;
-//     console.log(selected);
-
-//     var filteredList = sofaData.filter(function (elem) {
-//       return elem.brandName == selected;
-//     });
-
-//     console.log(filteredList);
-//     displayData(filteredList);
-//   }
-
-
-  //Sort by price
-  // function handlePriceSort() {
-  //   var selected = document.querySelector("#priceSort").value;
-  //   //console.log(selected);
-  //   if (selected == "high") {
-  //     //descending
-  //     sofaData.sort(function (a, b) {
-  //       return Number(b.price) - Number(a.price);
-  //     });
-  //   }
-  //   if (selected == "low") {
-  //     //ascending
-  //     sofaData.sort(function (a, b) {
-  //       return Number(a.price) - Number(b.price);
-  //     });
-  //   }
-
-  //   console.log(sofaData);
-  //   displayData(sofaData);
-  // }
 
 
   function handlerPriceSort() {
@@ -151,10 +114,7 @@ sofaDataFn();
         //append
         div.append(image, name, price, wish_add_div);
         document.querySelector("#container").append(div);
-  
-        // div.onclick = () =>{
-        //   window.location.href = "productInfo.html";
-        // }
+
       });
 
 
@@ -200,9 +160,3 @@ sofaDataFn();
   }
 
 
-//   function addToCart(data) {
-//     console.log(data, "data");
-//     cartArr.push(data);
-//     localStorage.setItem("CartItems", JSON.stringify(cartArr));
-//     alert("added successfully");
-//   }
