@@ -52,7 +52,7 @@ let header = () => {
             </div>
             <div class="separated-list">
               <div><i class="fas fa-shopping-cart"></i></div>
-              <div class="hp-link">Cart</div>
+              <div class="hp-link"><a href='cart.html'>Cart</a></div>
             </div>
           </div>
         </div>
