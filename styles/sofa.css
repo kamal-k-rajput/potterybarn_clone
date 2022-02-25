@@ -22,8 +22,11 @@
   #container {
     display: grid;
     grid-template-columns: repeat(3,1fr);
+
     gap: 25px;
     margin: 20px;
+
+
   }
   #flex {
     display: flex;
@@ -57,7 +60,10 @@
 
 
   #wishListBtn{
+
     background-color: gray;
+
+  
     color: white;
     border: none;
     padding: 0px 30px;
@@ -71,7 +77,9 @@
 
   #addtoCartBtn {
     border: none;
+
     background-color: gray;
+
     color: white;
     padding: 0px 20px;
   }
@@ -84,9 +92,13 @@
   #wish_add_div{
       display: flex;
       justify-content: space-between;
+
   }
 
   #price{
     font-weight: bold;
 
   }
+
+
+
