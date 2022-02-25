@@ -1,0 +1,35 @@
+footer {
+  width: 100%;
+}
+#footer-section {
+  font-weight: 300;
+  line-height: 28px;
+  color: #010101;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-evenly;
+}
+body > footer {
+  width: 100%;
+  background-color: rgb(229, 227, 222);
+  padding-bottom: 20px;
+}
+body > footer > p {
+  font-family: TT-Norms-Pro, "Open Sans", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 10px;
+  line-height: 10px;
+  color: #010101;
+  text-align: center;
+}
+
+#footer-section > div > ul > li {
+  cursor: pointer;
+}
+#footer-section > div > ul > h3 {
+  cursor: default;
+}
+#ft-follow-us{
+  display: flex;
+  justify-content: space-between;
+}
