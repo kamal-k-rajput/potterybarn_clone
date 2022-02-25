@@ -236,23 +236,6 @@ function displayCart(cartArr){
                 window.location.href = "payment.html"
             }
 
-    //         document.getElementById("#emptyBtn>button").addEventListener("submit",btnClick);
-    // function btnClick(){
-      
-    //     // window.location.href = "payment.html"
-
-    //         window.location.href = "payment.html"
-
-        
-    // }
-
-            //Image Creation
-            // var emptyImage = document.createElement("div");
-            // emptyImage.id="emptyImage";  
-            // emptyImage.setAttribute ("src","https://in.sugarcosmetics.com/ic_empty_cart.png")
-
-            
-            //  document.querySelector("emptyImage").append(emptyImage);
          }
          
          //When item is removed from cart then Discount Applied vis changed
@@ -362,7 +345,7 @@ function displayCart(cartArr){
      //Decrement Product
      function decrementProduct(index){
         event.preventDefault();
-        count=cartArr[index].count;
+        var count=cartArr[index].count;
         if(count==1){
             removeItem(index);
         }
