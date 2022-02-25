@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style\cart.css">
+    <link rel="stylesheet" href="/styles/cart.css">
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+   
 </head>
 <body>
-    
+  <header id="header-main-container">
+    <!-- header container  -->
+  </header>
     <!---------- Cart Page Start ------------->
     <div class="icon-div">
         <p class="icon">
@@ -82,7 +87,7 @@
                 <p class="txt-small">Slect Payment Method</p>
               <div id="summary-radio-group" class="summary-radio-group">
                 <div class="radio-button">
-                <input id="creditCard" name="paymentOptions" type="radio" value="creditCard" checked="true">
+                <input class="inputTag" id="creditCard" name="paymentOptions" type="radio" value="creditCard" checked="true">
                 <label for="creditCard">
                 <span class="logo-group">
                 <img src="https://assets.pbimgs.com/pbimgs/ab/images/i/202203/0031/images/shoppingcart/order-summary/Visa_Inc._logo.svg" alt="">
@@ -94,13 +99,13 @@
                 </label>
                 </div>
                 <div class="radio-button">
-                <input id="payPal" name="paymentOptions" type="radio" value="payPal">
+                <input class="inputTag" id="payPal" name="paymentOptions" type="radio" value="payPal">
                 <label for="payPal">
                 <span> <img class="payment-provider-img" src="https://assets.pbimgs.com/pbimgs/ab/images/i/202202/0001/images/shoppingcart/order-summary/PayPal_logo.svg" alt=""></span>
                 </label>
                 </div>
                 <div class="applePayRadio radio-button hidden" abtestshow="true">
-                <input id="applePay" name="paymentOptions" type="radio" value="applePay">
+                <input class="inputTag" id="applePay" name="paymentOptions" type="radio" value="applePay">
                 <label for="applePay">
                 <span><img class="payment-provider-img" src="https://assets.pbimgs.com/pbimgs/ab/images/i/202204/0006/images/shoppingcart/order-summary/Apple_Pay.svg" alt=""></span>
                 </label>
@@ -114,8 +119,8 @@
               </div>
               </div discount-aply>
               <form>
-                <input type="text" id="coupon" placeholder="Enter Coupon" />
-                <input type="submit" id="coupn-apply" value="Apply">
+                <input class="inputTag" type="text" id="coupon" placeholder="Enter Coupon" />
+                <input class="inputTag" type="submit" id="coupn-apply" value="Apply">
               </form>
               <h3 class="invalid-coupon"></h3>
               <h3 class="valid-coupon"></h3>
@@ -154,7 +159,10 @@
             </div>
           </div>
       </div>
-    
+
+      <footer id="ft-container">
+        <!-- footer container -->
+      </footer>
 </body>
 </html>
 
@@ -179,6 +187,11 @@
 //      window.location.href ="homepage.html"
 //    })
 //    </script>
-   <script src="scripts/cart.js"></script>
+   <script type="module" src="scripts/cart.js"></script>
        <script src="https://kit.fontawesome.com/74404664ae.js" crossorigin="anonymous"></script>
+
+       <!-- <script
+       src="https://kit.fontawesome.com/d3ed7b5523.js"
+       crossorigin="anonymous"
+     ></script> -->
    
