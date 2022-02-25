@@ -36,7 +36,7 @@ let header = () => {
             <input type="text"  id="header-search-field" placeholder='Search'/>
           <i class="fas fa-search"></i>
             </div>
-          <div id="icon-pb">POTTERYBARN</div>
+          <div id="icon-pb"><a href="index.html"> POTTERYBARN </a></div>
           <div class="user-links">
             <div class="separated-list">
               <div><i class="fas fa-user"></i></div>
@@ -320,7 +320,7 @@ let header = () => {
           <div class="dropdown">
             <div class="nav-link-extended">
               <ul>
-                <p>Living Room Furniture</p>
+                <p><a href="furniture.html">Living Room Furniture </a></p>
                 <li>Sofa &amp; Sectional Collections</li>
                 <li>Sectionals</li>
                 <li>Sofas &amp; Loveseats</li>
@@ -409,9 +409,9 @@ let header = () => {
           <div class="dropdown">
             <div class="nav-link-extended">
               <ul>
-                <p>Outdoor Furniture Collections</p>
+                <p><a href="outdoor.html">Outdoor Furniture Collections</a></p>
                 <li>Shop All Collections</li>
-                <p>Outdoor Lounge &amp; Accent Furniture</p>
+                <p><a href="outdoor.html">Outdoor Lounge &amp; Accent Furniture </a></p>
                 <li>Sectionals</li>
                 <li>Sofas &amp; Loveseats</li>
                 <li>Lounge Chairs &amp; Ottomans</li>
