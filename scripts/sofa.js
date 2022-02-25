@@ -1,5 +1,6 @@
 
 
+
 import sofaDataFn from "/components/dataFile.js";
 
 sofaDataFn();
@@ -18,6 +19,7 @@ sofaDataFn();
   //   displayData(sofaData);
   // })
   displayData(sofaData);
+
 
 
 
@@ -54,6 +56,7 @@ sofaDataFn();
 //   }
  function displayData(sofaData) {
     
+
 
 
       document.querySelector("#container").innerHTML = "";
@@ -115,6 +118,12 @@ sofaDataFn();
 
 
 
+    // add to cart button creation
+
+    var addtoCartBtn = document.createElement("button");
+    addtoCartBtn.id = "addtoCartBtn";
+    addtoCartBtn.textContent = "Add To Cart";
+
 
 
 
@@ -155,11 +164,10 @@ sofaDataFn();
     alert("Item added to cart");
   }
 
+
 //   function addToCart(data) {
 //     console.log(data, "data");
 //     cartArr.push(data);
 //     localStorage.setItem("CartItems", JSON.stringify(cartArr));
 //     alert("added successfully");
 //   }
-
-
