@@ -81,3 +81,43 @@ body .hp-image-full > p {
 .pb-hp-img img {
   width: 20%;
 }
+/* .hp-img-slider {
+  width: 2000px;
+  overflow: hidden;
+  display: flex;
+}
+.hp-img-slider img {
+  width: 250px;
+  margin: 10px 20px;
+}
+.hp-img-slider-container {
+  width: 90%;
+  overflow: hidden;
+} */
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.child {
+  width: 20%;
+  margin: 0 10px;
+  display: none;
+}
+.child img {
+  min-height: 350px;
+  padding-bottom: 40px;
+}
+#leftarrow,
+#rightarrow {
+  margin: 12px;
+  width: 3%;
+  display: inline-block;
+}
+#leftarrow button,
+#rightarrow button {
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 30px;
+}
