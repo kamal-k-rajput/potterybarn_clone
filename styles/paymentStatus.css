@@ -1,14 +1,18 @@
+body{
+    background-color: gray;
+}
+
 .main{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 350px ;
     color: white;
-    background-color:#f1a0c8;
+    background-color: rgb(32, 37, 39);
      text-align: center;
      margin:0% 30% 0% 30%;
      border-radius: 5px;
      padding-bottom: 1%;
-     box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+     margin-top: 10%;
 }
 input{
     background-color: whitesmoke;
