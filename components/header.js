@@ -321,10 +321,10 @@ let header = () => {
             <div class="nav-link-extended">
               <ul>
                 <p><a href="furniture.html">Living Room Furniture </a></p>
-                <li>Sofa &amp; Sectional Collections</li>
-                <li>Sectionals</li>
-                <li>Sofas &amp; Loveseats</li>
-                <li>Sleeper Sofas</li>
+                <li><a href="furniture.html">Sofa &amp; Sectional Collections </a></li>
+                <li><a href="furniture.html">Sectionals </a></li>
+                <li><a href="furniture.html">Sofas &amp; Loveseats </a></li>
+                <li><a href="furniture.html">Sleeper Sofas</a></li>
                 <li>Chairs</li>
                 <li>Leather Furniture</li>
                 <li>Coffee Tables</li>
@@ -410,9 +410,9 @@ let header = () => {
             <div class="nav-link-extended">
               <ul>
                 <p><a href="outdoor.html">Outdoor Furniture Collections</a></p>
-                <li>Shop All Collections</li>
+                <li><a href="outdoor.html">Shop All Collections</a></li>
                 <p><a href="outdoor.html">Outdoor Lounge &amp; Accent Furniture </a></p>
-                <li>Sectionals</li>
+                <li><a href="outdoor.html">Sectionals</a> </li>
                 <li>Sofas &amp; Loveseats</li>
                 <li>Lounge Chairs &amp; Ottomans</li>
                 <li>Chaises &amp; Daybeds</li>
