@@ -1,12 +1,323 @@
  function sofaDataFn() {
 
+  var sofaData = [
+    {
+      image_url:
+        "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202152/0492/dream-square-arm-upholstered-sofa-3-l.jpg",
+      name: "Dream Square Arm Upholstered Sofa",
+      price: 1999,
+      rating: 4.9,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      reviews: "(40)",
+      product: "blush",
+      shade_url: "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+      shade_no: 5,
+      count: 1,
+      product_id:1,
+    },
+    {
+      image_url:
+        "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202203/1015/dream-square-arm-slipcovered-sofa-collection-4-l.jpg",
+      name: "Dream Square Arm Slipcovered Sofa",
+      price: 2099,
+      rating: 4.7,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      reviews: "(5)",
+      shade_url: "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+      shade_no: 7,
+      count: 1,
+      product: "blush",
+      product_id:2,
+    },
+    {
+      image_url:
+        "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202152/0492/dream-square-arm-upholstered-modular-sofa-chaise-sectional-1-c.jpg",
+      name: "Dream Square Arm Upholstered Modular Sofa Chaise Sectional",
+      price: 5196,
+      rating: 4.7,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      reviews: "(20)",
+      shade_url: "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+      shade_no: 11,
+      count: 1,
+      product: "",
+      product_id:3,
+    },
+    {
+      image_url:
+        "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202151/1486/dream-square-arm-splicovered-modular-sofa-l.jpg",
+      name: "Dream Square Arm Slipcovered Modular Sofa Chaise Sectional",
+      price: 5596,
+      rating: 4.7,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      reviews: "(10)",
+      shade_url: "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+      shade_no: 4,
+      count: 1,
+      product: "matte",
+      product_id:4,
+    },
+    {
+      image_url:
+        "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202152/0492/dream-square-arm-upholstered-modular-l-shaped-sectional-2-l.jpg",
+      name: "Dream Square Arm Upholstered Modular L-Shaped Sectional",
+      price: 7045,
+      rating: 4.9,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      reviews: "(45)",
+      shade_url: "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+      shade_no: 20,
+      count: 1,
+      product: "Matte",
+      product_id:5,
+    },
+    {
+      image_url:
+        "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202152/0902/dream-square-arm-slipcovered-modular-l-shaped-sectional-l.jpg",
+      name: "Dream Square Arm Slipcovered Modular L-Shaped Sectional",
+      price: 7845,
+      rating: 4.7,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      reviews: "(20)",
+      shade_url: "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+      shade_no: 8,
+      count: 1,
+      product: "eye",
+      product_id:6,
+    },
+    {
+      image_url:
+        "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202152/1334/dream-square-arm-upholstered-3-piece-l-shaped-sectional-3-c.jpg",
+      name: "Dream Square Arm Upholstered 3-Piece L-Shaped Sectional",
+      price: 5747,
+      rating: 4.7,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      reviews: "(15)",
+      shade_url: "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+      shade_no: 5,
+      count: 1,
+      product: "crayon",
+      product_id:7,
+    },
+    {
+      image_url:
+        "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202152/1331/dream-square-arm-splipcovered-modular-3-piece-l-shaped-sec-l.jpg",
+      name: "Dream Square Arm Slipcovered 3-Piece L-Shaped Sectional",
+      price: 6047,
+      rating: 4.5,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      reviews: "(2)",
+      shade_url: "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+      shade_no: 12,
+      count: 1,
+      product: "liquid",
+      product_id:8,
+    },
+    {
+      image_url:
+        "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202152/1334/dream-square-arm-upholstered-3-piece-corner-sectional-l.jpg",
+      name: "Dream Square Arm Upholstered 3-Piece Corner Sectional",
+      price: 5047,
+      rating: 4.8,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      reviews: "(50)",
+      shade_url: "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+      shade_no: 5,
+      count: 1,
+      product: "found",
+      product_id:9,
+    },
+    {
+      image_url:
+        "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202152/1331/dream-square-arm-slipcovered-3-piece-corner-sectional-2-c.jpg",
+      name: "Dream Square Arm Slipcovered 3-Piece Corner Sectional",
+      price: 5347,
+      rating: 4.8,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      reviews: "(1)",
+      product: "kajal",
+      feature: "smudge",
+      shade_url: "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+      shade_no: 2,
+      count: 1,
+      product_id:10,
+    },
+    {
+      image_url: "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202152/1334/dream-square-arm-upholstered-5-piece-u-shaped-sectional-2-l.jpg",
+      name: "Dream Square Arm Upholstered U-Shaped Sectional",
+      price: 6895,
+      rating: 4.3,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      shade_url: "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+      shade_no: 7,
+      count: 1,
+      reviews: "(49)",
+      product: "combo",
+      product_id:11,
+    },
+    {
+      image_url:
+        "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202152/1331/dream-square-arm-slipcovered-modular-5-piece-u-shaped-sect-c.jpg",
+      name: "Dream Square Arm Slipcovered U-Shaped Sectional",
+      price: 7395,
+      rating: 4.4,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      reviews: "(9)",
+      shade_url: "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+      shade_no: 5,
+      count: 1,
+      product: "",
+      product_id:12,
+    },
+    {
+      image_url:
+        "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202149/0540/build-your-own-dream-square-arm-upholstered-sectional-comp-1-l.jpg",
+      name: "Build Your Own - Dream Square Arm Upholstered Sectional Components",
+      price: 949,
+      rating: 5,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      reviews: "(31)",
+      product: "blush",
+      shade_url: "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+      shade_no: 10,
+      count: 1,
+      product_id:13,
+    },
+    {
+      image_url:
+        "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202151/0996/build-your-own-dream-square-arm-slipcovered-sectional-comp-1-l.jpg",
+      name: "Build Your Own - Dream Square Arm Slipcovered Sectional Components",
+      price: 1049,
+      rating: 4.8,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      reviews: "(17)",
+      product: "eye",
+      shade_url: "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+      shade_no: 4,
+      count: 1,
+      product_id:14,
+    },
+    {
+      image_url:
+        "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202152/0492/dream-square-arm-upholstered-armchair-4-l.jpg",
+      name: "Dream Square Arm Upholstered Armchair",
+      price: 1349,
+      rating: 4.8,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      reviews: "(4)",
+      shade_url: "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+      shade_no: 20,
+      count: 1,
+      product: "liquid",
+      product_id:15,
+    },
+    {
+      image_url:
+        "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202144/0338/dream-square-arm-slipcovered-armchair-1-l.jpg",
+      name: "Dream Square Arm Slipcovered Armchair",
+      price: 1449,
+      rating: 4.8,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      reviews: "(80)",
+      shade_url: "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+      shade_no: 15,
+      count: 1,
+      product: "primer",
+      product_id:16,
+    },
+    {
+      image_url:
+        "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202152/0495/dream-upholstered-sectional-ottoman-1-l.jpg",
+      name: "Dream Upholstered Sectional Ottoman",
+      price: 949,
+      rating: 4.0,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      product: "eye",
+      feature: "smudge",
+      shade_url: "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+      shade_no: 5,
+      count: 1,
+      reviews: "(10)",
+      product_id:17,
+    },
+    {
+      image_url:
+        "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202152/0918/dream-slipcovered-modular-sectional-ottoman-l.jpg",
+      name: "Dream Slipcovered Modular Sectional Ottoman",
+      price: 1049,
+      rating: 4.8,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      reviews: "(59)",
+      shade_url: "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+      shade_no: 6,
+      count: 1,
+      product: "",
+      product_id:18,
+    },
+    {
+      image_url:
+        "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202151/1012/dream-upholstered-ottoman-2-l.jpg",
+      name: "Dream Upholstered Ottoman",
+      price: 749,
+      rating: 4.7,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      reviews: "(43)",
+      shade_url: "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+      shade_no: 10,
+      count: 1,
+      product: "found",
+      product_id:19,
+    },
+    {
+      image_url:
+        "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202151/1117/dream-slipcovered-ottoman-1-c.jpg",
+      name: "Dream Slipcovered Ottoman",
+      price: 849,
+      rating: 4.9,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      reviews: "(89)",
+      shade_url: "https://i.ibb.co/855SYKc/white-bg.jpg",
+      count: 1,
+      product: "matte",
+      product_id:20,
+    },
+    {
+      image_url:
+        "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202151/0996/build-your-own-dream-square-arm-slipcovered-sectional-comp-1-l.jpg",
+      name: "Dream Slipcovered Ottoman",
+      price: 649,
+      rating: 4.7,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      reviews: "(61)",
+      shade_url: "https://i.ibb.co/855SYKc/white-bg.jpg",
+      count: 1,
+      product: "found",
+      product_id:21,
+    },
+    {
+      image_url:
+        "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202151/1127/dream-square-arm-slipcovers-only-2-l.jpg",
+      name: "Dream Square Arm Slipcovers Only",
+      price: 499,
+      rating: 4.9,
+      star_url: "https://i.ibb.co/4d3n7ZC/star.png",
+      reviews: "(45)",
+      product: "blush",
+      shade_url: "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
+      shade_no: 2,
+      count: 1,
+      product_id:22
+    },
+  ];
 
-    var sofaData = [
+    
+
+      var outdoorData = [
         {
           image_url:
-            "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202152/0492/dream-square-arm-upholstered-sofa-3-l.jpg",
-          name: "Dream Square Arm Upholstered Sofa",
-          price: 1999,
+            "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202149/0022/torrey-all-weather-wicker-papasan-swivel-chair-c.jpg",
+          name: "Torrey All-Weather Wicker Papasan Swivel Chair",
+          price: 1499,
           rating: 4.9,
           star_url: "https://i.ibb.co/4d3n7ZC/star.png",
           reviews: "(40)",
@@ -14,12 +325,13 @@
           shade_url: "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
           shade_no: 5,
           count: 1,
+          product_id:50,
         },
         {
           image_url:
-            "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202203/1015/dream-square-arm-slipcovered-sofa-collection-4-l.jpg",
-          name: "Dream Square Arm Slipcovered Sofa",
-          price: 2099,
+            "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202204/0184/abbott-indoor-outdoor-96-concrete-fsc-acacia-chunky-leg-di-l.jpg",
+          name: "Abbott Indoor/Outdoor 96 & FSC Acacia Leg Dining Table",
+          price:  2699,
           rating: 4.7,
           star_url: "https://i.ibb.co/4d3n7ZC/star.png",
           reviews: "(5)",
@@ -27,12 +339,13 @@
           shade_no: 7,
           count: 1,
           product: "blush",
+          product_id:51,
         },
         {
           image_url:
-            "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202152/0492/dream-square-arm-upholstered-modular-sofa-chaise-sectional-1-c.jpg",
-          name: "Dream Square Arm Upholstered Modular Sofa Chaise Sectional",
-          price: 5196,
+            "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202207/0005/abbott-indoor-outdoor-concrete-fsc-acacia-rectangular-coff-c.jpg",
+          name: "Abbott Indoor/Outdoor Concrete & FSC® Acacia Coffee Table",
+          price: 1396,
           rating: 4.7,
           star_url: "https://i.ibb.co/4d3n7ZC/star.png",
           reviews: "(20)",
@@ -40,12 +353,13 @@
           shade_no: 11,
           count: 1,
           product: "",
+          product_id:52,
         },
         {
           image_url:
-            "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202151/1486/dream-square-arm-splicovered-modular-sofa-l.jpg",
-          name: "Dream Square Arm Slipcovered Modular Sofa Chaise Sectional",
-          price: 5596,
+            "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202203/0020/abbott-outdoor-fsc-acacia-kitchen-convertable-refrigerator-l.jpg",
+          name: "Abbott Outdoor FSC® Acacia Kitchen Convertable Refrigerator",
+          price: 2699,
           rating: 4.7,
           star_url: "https://i.ibb.co/4d3n7ZC/star.png",
           reviews: "(10)",
@@ -53,12 +367,13 @@
           shade_no: 4,
           count: 1,
           product: "matte",
+          product_id:53,
         },
         {
           image_url:
-            "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202152/0492/dream-square-arm-upholstered-modular-l-shaped-sectional-2-l.jpg",
-          name: "Dream Square Arm Upholstered Modular L-Shaped Sectional",
-          price: 7045,
+            "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202140/0013/malibu-75-fsc-teak-rectangular-extending-dining-table-l.jpg",
+          name: "Malibu 75 FSC Teak Rectangular Extending Dining Table",
+          price: 2199,
           rating: 4.9,
           star_url: "https://i.ibb.co/4d3n7ZC/star.png",
           reviews: "(45)",
@@ -66,12 +381,13 @@
           shade_no: 20,
           count: 1,
           product: "Matte",
+          product_id:54,
         },
         {
           image_url:
-            "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202152/0902/dream-square-arm-slipcovered-modular-l-shaped-sectional-l.jpg",
-          name: "Dream Square Arm Slipcovered Modular L-Shaped Sectional",
-          price: 7845,
+            "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202134/1268/malibu-fsc-teak-coffee-table-l.jpg",
+          name: "Malibu FSC® Teak Coffee Table",
+          price: 899,
           rating: 4.7,
           star_url: "https://i.ibb.co/4d3n7ZC/star.png",
           reviews: "(20)",
@@ -79,12 +395,13 @@
           shade_no: 8,
           count: 1,
           product: "eye",
+          product_id:55,
         },
         {
           image_url:
-            "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202152/1334/dream-square-arm-upholstered-3-piece-l-shaped-sectional-3-c.jpg",
-          name: "Dream Square Arm Upholstered 3-Piece L-Shaped Sectional",
-          price: 5747,
+            "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202207/0040/torrey-all-weather-wicker-2-piece-square-arm-double-chaise-l.jpg",
+          name: "Torrey All-Weather Wicker 2-Piece Square Arm Double Sectional",
+          price: 1296,
           rating: 4.7,
           star_url: "https://i.ibb.co/4d3n7ZC/star.png",
           reviews: "(15)",
@@ -92,6 +409,7 @@
           shade_no: 5,
           count: 1,
           product: "crayon",
+          product_id:56,
         },
         {
           image_url:
@@ -105,12 +423,13 @@
           shade_no: 12,
           count: 1,
           product: "liquid",
+          product_id:57,
         },
         {
           image_url:
-            "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202152/1334/dream-square-arm-upholstered-3-piece-corner-sectional-l.jpg",
-          name: "Dream Square Arm Upholstered 3-Piece Corner Sectional",
-          price: 5047,
+            "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202134/1223/abbott-concrete-fsc-acacia-island-and-hutch-brown-c.jpg",
+          name: "Abbott Concrete & FSC® Acacia Island and Hutch",
+          price: 899,
           rating: 4.8,
           star_url: "https://i.ibb.co/4d3n7ZC/star.png",
           reviews: "(50)",
@@ -118,6 +437,7 @@
           shade_no: 5,
           count: 1,
           product: "found",
+          product_id:58,
         },
         {
           image_url:
@@ -132,11 +452,12 @@
           shade_url: "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
           shade_no: 2,
           count: 1,
+          product_id:59,
         },
         {
-          image_url: "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202152/1334/dream-square-arm-upholstered-5-piece-u-shaped-sectional-2-l.jpg",
-          name: "Dream Square Arm Upholstered U-Shaped Sectional",
-          price: 6895,
+          image_url: "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202151/0008/abbott-concrete-40-square-propane-fire-pit-table-c.jpg",
+          name: "Abbott Concrete 40 Square Propane Fire Pit Table",
+          price: 4999,
           rating: 4.3,
           star_url: "https://i.ibb.co/4d3n7ZC/star.png",
           shade_url: "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
@@ -144,24 +465,13 @@
           count: 1,
           reviews: "(49)",
           product: "combo",
+          product_id:60,
         },
-        {
-          image_url:
-            "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202152/1331/dream-square-arm-slipcovered-modular-5-piece-u-shaped-sect-c.jpg",
-          name: "Dream Square Arm Slipcovered U-Shaped Sectional",
-          price: 7395,
-          rating: 4.4,
-          star_url: "https://i.ibb.co/4d3n7ZC/star.png",
-          reviews: "(9)",
-          shade_url: "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
-          shade_no: 5,
-          count: 1,
-          product: "",
-        },
+        
         {
           image_url:
             "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202149/0540/build-your-own-dream-square-arm-upholstered-sectional-comp-1-l.jpg",
-          name: "Build Your Own - Dream Square Arm Upholstered Sectional Components",
+          name: "Build Your Own - Dream Square Arm Sectional Components",
           price: 949,
           rating: 5,
           star_url: "https://i.ibb.co/4d3n7ZC/star.png",
@@ -170,11 +480,12 @@
           shade_url: "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
           shade_no: 10,
           count: 1,
+          product_id:61,
         },
         {
           image_url:
             "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202151/0996/build-your-own-dream-square-arm-slipcovered-sectional-comp-1-l.jpg",
-          name: "Build Your Own - Dream Square Arm Slipcovered Sectional Components",
+          name: "Build Your Own - Dream Square Sectional Components",
           price: 1049,
           rating: 4.8,
           star_url: "https://i.ibb.co/4d3n7ZC/star.png",
@@ -183,6 +494,7 @@
           shade_url: "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
           shade_no: 4,
           count: 1,
+          product_id:62,
         },
         {
           image_url:
@@ -196,11 +508,12 @@
           shade_no: 20,
           count: 1,
           product: "liquid",
+          product_id:63,
         },
         {
           image_url:
-            "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202144/0338/dream-square-arm-slipcovered-armchair-1-l.jpg",
-          name: "Dream Square Arm Slipcovered Armchair",
+            "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202206/0220/abbott-indoor-outdoor-concrete-fsc-acacia-counter-height-t-4-l.jpg",
+          name: "Abbott Indoor/Outdoor Concrete & FSC® Acacia Counter",
           price: 1449,
           rating: 4.8,
           star_url: "https://i.ibb.co/4d3n7ZC/star.png",
@@ -209,12 +522,13 @@
           shade_no: 15,
           count: 1,
           product: "primer",
+          product_id:64,
         },
         {
           image_url:
-            "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202152/0495/dream-upholstered-sectional-ottoman-1-l.jpg",
-          name: "Dream Upholstered Sectional Ottoman",
-          price: 949,
+            "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202134/0067/abbott-potting-station-l.jpg",
+          name: "Abbott Potting Station",
+          price: 549,
           rating: 4.0,
           star_url: "https://i.ibb.co/4d3n7ZC/star.png",
           product: "eye",
@@ -223,12 +537,13 @@
           shade_no: 5,
           count: 1,
           reviews: "(10)",
+          product_id:65,
         },
         {
           image_url:
-            "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202152/0918/dream-slipcovered-modular-sectional-ottoman-l.jpg",
-          name: "Dream Slipcovered Modular Sectional Ottoman",
-          price: 1049,
+            "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202207/0003/abbott-indoor-outdoor-fsc-acacia-woven-lounge-chair-c.jpg",
+          name: "Abbott Indoor/Outdoor FSC® Acacia Woven Lounge Chair",
+          price: 499,
           rating: 4.8,
           star_url: "https://i.ibb.co/4d3n7ZC/star.png",
           reviews: "(59)",
@@ -236,12 +551,13 @@
           shade_no: 6,
           count: 1,
           product: "",
+          product_id:66,
         },
         {
           image_url:
-            "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202151/1012/dream-upholstered-ottoman-2-l.jpg",
-          name: "Dream Upholstered Ottoman",
-          price: 749,
+            "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202134/1062/abbott-fsc-acacia-dining-bench-brown-l.jpg",
+          name: "Abbott FSC® Acacia Dining Bench",
+          price: 699,
           rating: 4.7,
           star_url: "https://i.ibb.co/4d3n7ZC/star.png",
           reviews: "(43)",
@@ -249,6 +565,7 @@
           shade_no: 10,
           count: 1,
           product: "found",
+          product_id:67,
         },
         {
           image_url:
@@ -261,24 +578,26 @@
           shade_url: "https://i.ibb.co/855SYKc/white-bg.jpg",
           count: 1,
           product: "matte",
+          product_id:68,
         },
         {
           image_url:
-            "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202151/0996/build-your-own-dream-square-arm-slipcovered-sectional-comp-1-l.jpg",
-          name: "Dream Slipcovered Ottoman",
-          price: 649,
+            "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202205/0003/malibu-fsc-teak-8-piece-u-shaped-sectional-l.jpg",
+          name: "Malibu FSC® Teak 8-Piece U-Shaped Sectional",
+          price: 1300,
           rating: 4.7,
           star_url: "https://i.ibb.co/4d3n7ZC/star.png",
           reviews: "(61)",
           shade_url: "https://i.ibb.co/855SYKc/white-bg.jpg",
           count: 1,
           product: "found",
+          product_id:69,
         },
         {
           image_url:
-            "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202151/1127/dream-square-arm-slipcovers-only-2-l.jpg",
-          name: "Dream Square Arm Slipcovers Only",
-          price: 499,
+            "https://assets.pbimgs.com/pbimgs/rk/images/dp/wcm/202134/0021/malibu-24-fsc-teak-side-table-l.jpg",
+          name: "Malibu 24 FSC Teak Side Table",
+          price: 799,
           rating: 4.9,
           star_url: "https://i.ibb.co/4d3n7ZC/star.png",
           reviews: "(45)",
@@ -286,21 +605,14 @@
           shade_url: "https://i.ibb.co/P4hFywk/ic-multiple-shades-opt2.png",
           shade_no: 2,
           count: 1,
+          product_id:70,
         },
       ];
-    
+
+     //Store sofa data & outdoorData in local storage
       localStorage.setItem("sofaData", JSON.stringify(sofaData));
 
-
-
-      var counter = 1;
-  for (var i = 0; i < sofaData.length; i++) {
-    sofaData[i]["product_id"] = counter;
-    
-    //console.log(sofaData[i]["product_id"]);
-    counter++;
-  }
-  localStorage.setItem("sofaData", JSON.stringify(sofaData));
+      localStorage.setItem("outdoorData", JSON.stringify(outdoorData));
 
 }
 export default sofaDataFn

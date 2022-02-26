@@ -1,3 +1,22 @@
+//code for importing footer
+
+import footer from "/components/footer.js";
+let ft_container = document.getElementById("ft-container");
+ft_container.innerHTML = footer();
+
+//code for importing footer
+
+
+//code for importing header
+import header from "/components/header.js";
+let header_container = document.getElementById("header-main-container");
+header_container.innerHTML = header();
+
+
+//code for importing header
+
+
+
 
     //local storage name of ad to cart: cartItems
     var cartArr = JSON.parse(localStorage.getItem("cartItems")) || [];
@@ -196,11 +215,15 @@ function displayCart(cartArr){
         
          //If cart become empty then below code is executed
          if(newTotal==0){
+             //set total price=0
+            var totalPrice= document.getElementById("totalPrice");
             document.querySelector("#cart-container").remove();
             var emptyCart = document.createElement("div");
             emptyCart.id="emptyCart";
             emptyCart.innerHTML= "<h2>Hey! It's lonely here Your bag seems to have no company.Why not add some products</h2>";
            
+            
+            totalPrice.textContent=`$ ${newTotal}`
 
             var emptyBtn = document.createElement("div");
             emptyBtn.id="emptyBtn";
@@ -217,28 +240,11 @@ function displayCart(cartArr){
                 window.location.href = "payment.html"
             }
 
-    //         document.getElementById("#emptyBtn>button").addEventListener("submit",btnClick);
-    // function btnClick(){
-      
-    //     // window.location.href = "payment.html"
-
-    //         window.location.href = "payment.html"
-
-        
-    // }
-
-            //Image Creation
-            // var emptyImage = document.createElement("div");
-            // emptyImage.id="emptyImage";  
-            // emptyImage.setAttribute ("src","https://in.sugarcosmetics.com/ic_empty_cart.png")
-
-            
-            //  document.querySelector("emptyImage").append(emptyImage);
          }
          
          //When item is removed from cart then Discount Applied vis changed
          var coupon = document.querySelector("#coupon").value;
-        if(coupon=='masai30'){
+        if(coupon!=null){
         var newCount= --cartArr[index].count;
         console.log(newCount)
         localStorage.setItem("cartItems",JSON.stringify(cartArr));
@@ -260,18 +266,26 @@ function displayCart(cartArr){
 
             var disRemove = total*.3 - cartArr[index].price * 0.3;
             console.log("dis ",disRemove);
-            document.querySelector("#disc-applied").textContent=disRemove;
+            document.querySelector("#disc-applied").textContent=disRemove.toFixed();
 
             
             
         }
         else{
             localStorage.setItem("discountPrice",0);
-            document.querySelector("#total").textContent=`Cart Total : ${newTotal} `
-             document.querySelector("#cart-total").textContent=newTotal;
-            document.querySelector("#pay-amount").textContent=newTotal.toFixed();;
+            // document.querySelector("#total").textContent=`Cart Total : ${newTotal} `
+            //  document.querySelector("#cart-total").textContent=newTotal;
+            // document.querySelector("#pay-amount").textContent=newTotal.toFixed();;
+            // var totalPrice= document.getElementById("totalPrice");
+            // totalPrice.textContent=`$ ${total}`
+            document.querySelector("#disc-applied").textContent=0;
+
+            document.querySelector("#total").textContent=`Cart Total : ${total} `;
+        document.querySelector("#cart-total").textContent=total;
+         document.querySelector("#pay-amount").textContent=total.toFixed();
+         var totalPrice= document.getElementById("totalPrice");
+            totalPrice.textContent=`$ ${total}`
         }
-         //new change
          
         
 
@@ -284,9 +298,11 @@ function displayCart(cartArr){
          
          console.log(newTotal);
          
-         document.querySelector("#total").textContent=`Cart Total : ${newTotal} `
-         document.querySelector("#cart-total").textContent=newTotal;
+         document.querySelector("#total").textContent=`Cart Total : ${newTotal} `;
+        document.querySelector("#cart-total").textContent=newTotal;
          document.querySelector("#pay-amount").textContent=newTotal.toFixed();
+         var totalPrice= document.getElementById("totalPrice");
+            totalPrice.textContent=`$ ${newTotal}`
          //console.log("Aftet Rem Total: ",newTotal);
          
         //  cartArr.map(function (data,index){
@@ -294,8 +310,12 @@ function displayCart(cartArr){
         //  })
      }
 
-     //Increment Product
-     function incrementProduct(index){
+
+
+
+
+
+    function incrementProduct(index){
         event.preventDefault();
 
         var newCount= ++cartArr[index].count;
@@ -318,21 +338,25 @@ function displayCart(cartArr){
         console.log(newCount)
         localStorage.setItem("cartItems",JSON.stringify(cartArr));
 
-        // var newCount= --cartArr[index].count;
-        // console.log(newCount)
+        var newCount= --cartArr[index].count;
+        console.log(newCount)
         
 
-        //DDiscount Applied Update after product Increment
+        //Discount Applied Update after product Increment
         var disAdd = total*.3 + cartArr[index].price * 0.3;
         console.log("dis ",disAdd);
-        document.querySelector("#disc-applied").textContent=disAdd;
-        //Update Card Total
+        document.querySelector("#disc-applied").textContent=disAdd.toFixed();;
+       // Update Card Total
         total +=  cartArr[index].price;
         console.log("Total after inc. ",total)
         localStorage.setItem("total",total);
         document.querySelector("#total").textContent=`Cart Total : ${total} `;
         document.querySelector("#cart-total").textContent=total;
-        document.querySelector("#pay-amount").textContent=total.toFixed();
+         document.querySelector("#pay-amount").textContent=total.toFixed();
+
+
+        var totalPrice= document.getElementById("totalPrice");
+        totalPrice.textContent=`$ ${total}`
 
         
      
@@ -343,7 +367,7 @@ function displayCart(cartArr){
      //Decrement Product
      function decrementProduct(index){
         event.preventDefault();
-        count=cartArr[index].count;
+        var count=cartArr[index].count;
         if(count==1){
             removeItem(index);
         }
@@ -367,14 +391,17 @@ function displayCart(cartArr){
             //DDiscount Applied Update after product decrement
             var disRemove = total*.3 - cartArr[index].price * 0.3;
             console.log("dis ",disRemove);
-            document.querySelector("#disc-applied").textContent=disRemove;
+            document.querySelector("#disc-applied").textContent=disRemove.toFixed();;
             //Update Card Total
             total -=  cartArr[index].price;
             console.log("Total after dec. ",total)
             localStorage.setItem("total",total);
             document.querySelector("#total").textContent=`Cart Total : ${total} `;
+    
             document.querySelector("#cart-total").textContent=total;
             document.querySelector("#pay-amount").textContent=total.toFixed();;
+            var totalPrice= document.getElementById("totalPrice");
+    totalPrice.textContent=`$ ${total}`
 
             
         
