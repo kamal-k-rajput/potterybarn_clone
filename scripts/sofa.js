@@ -23,6 +23,7 @@ sofaDataFn();
 
 
       var sofaData =  JSON.parse(localStorage.getItem("sofaData"))||[];
+      var wishlistArr = JSON.parse(localStorage.getItem("listItems")) || [];
 
   var cartArr = JSON.parse(localStorage.getItem("cartItems"))
 
@@ -160,3 +161,10 @@ sofaDataFn();
   }
 
 
+
+  //wishlist
+  function wishList(elem) {
+    wishlistArr.push(elem);
+    localStorage.setItem("listItems", JSON.stringify(wishlistArr));
+    alert("Item added to wish list");
+  }

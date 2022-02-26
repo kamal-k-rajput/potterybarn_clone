@@ -1,11 +1,13 @@
-
+body{
+    background-color: gray;
+}
 
 .main{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: 300px ;
     color: white;
-    background-color:rgb(160, 166, 172);
+    background-color: rgb(32, 37, 39);
      text-align: center;
      margin:10% 30% 0% 30%;
      border-radius: 2px;
