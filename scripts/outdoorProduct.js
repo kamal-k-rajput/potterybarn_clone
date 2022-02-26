@@ -22,7 +22,7 @@ import sofaDataFn from "/components/dataFile.js";
 sofaDataFn();
 
 
-      var sofaData =  JSON.parse(localStorage.getItem("sofaData"))||[];
+      var outdoorData =  JSON.parse(localStorage.getItem("outdoorData"))||[];
 
   var cartArr = JSON.parse(localStorage.getItem("cartItems"))
 
@@ -31,41 +31,41 @@ sofaDataFn();
     cartArr = []; // initialize it with empty array;
     localStorage.setItem("cartItems", JSON.stringify(cartArr));
   } 
-
-  displayData(sofaData);
-
-
-
-
-  function handlerPriceSort() {
-    var selected = document.querySelector("#priceSort").value;
-    if (selected == "high") {
-      sofaData.sort(function (a, b) {
-        return b.price - a.price;
-      });
-    }
-    if (selected == "low") {
-      sofaData.sort(function (a, b) {
-        return a.price - b.price;
-      });
-    }
-    if (selected == "rel") {
-      sofaData.sort(function (a, b) {
-        return b.rating - a.rating;
-      });
-    }
-    displayData(sofaData);
-  }
+ 
+  displayData(outdoorData);
 
 
 
-  //Display product
- function displayData(sofaData) {
+
+
+//   function handlePriceSort() {
+//     var selected = document.querySelector("#priceSort").value;
+//     //console.log(selected);
+//     if (selected == "high") {
+//       //descending
+//       sofaData.sort(function (a, b) {
+//         return Number(b.price) - Number(a.price);
+//       });
+//     }
+//     if (selected == "low") {
+//       //ascending
+//       sofaData.sort(function (a, b) {
+//         return Number(a.price) - Number(b.price);
+//       });
+//     }
+
+//     console.log(sofaData);
+//     displayData(sofaData);
+//   }
+
+
+ function displayData(outdoorData) {
     
+
 
       document.querySelector("#container").innerHTML = "";
 
-      sofaData.map(function (data) {
+      outdoorData.map(function (data) {
 
         var div = document.createElement("div");
         //img,name,price,strikedoffprice
@@ -133,7 +133,7 @@ sofaDataFn();
 
   
   function addToCart(elem, index) {
-  
+
     console.log("ele:",elem);
     console.log("cartArr",cartArr.length);
     if (cartArr.length == 0) {
@@ -154,9 +154,8 @@ sofaDataFn();
         cartArr.push(elem);
       }
     }
-    // cartArr.push(elem);
+
     localStorage.setItem("cartItems", JSON.stringify(cartArr));
     alert("Item added to cart");
   }
-
 

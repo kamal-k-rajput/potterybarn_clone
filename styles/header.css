@@ -15,7 +15,10 @@ body {
   line-height: 22px;
   vertical-align: baseline;
 }
-
+#header-main-container a {
+  text-decoration: none;
+  color: black;
+}
 .hp-link {
   cursor: pointer;
 }
@@ -40,6 +43,7 @@ body {
 }
 .nav-extended-link:hover {
   border-bottom: 2px solid black;
+  margin-bottom: 0;
   /* padding:2px; */
 }
 
@@ -99,7 +103,7 @@ li {
 #header-search-field {
   border: none;
   width: 100%;
-  outline:none;
+  outline: none;
 }
 .separated-list {
   display: flex;
@@ -115,7 +119,7 @@ li {
 .nav-secondary li .dropdown {
   display: none;
   position: absolute;
-  top: 25px;
+  top: 20px;
   left: 0;
   width: 100%;
   height: 75vh;

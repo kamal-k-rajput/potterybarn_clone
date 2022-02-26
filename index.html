@@ -13,7 +13,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body onload="show()">
     <header id="header-main-container">
       <!-- header container  -->
     </header>
@@ -97,11 +97,10 @@
           alt=""
         />
       </div>
-
-      <div>
+      <div class="hp-img-slider-container">
         <!-- image slider here -->
+        
       </div>
-
       <div class="hp-image-full">
         <img
           src="https://assets.pbimgs.com/pbimgs/rk/images/dp/ecm/202206/0993/001/034.jpg"
@@ -158,8 +157,65 @@
           alt=""
         />
       </div>
-      <div>
-        <!-- image slider here -->
+      <div class="hp-image-full">
+       
+        <div class="parent">
+          <div id="leftarrow" onclick="moveleft()">
+            <button>&lt;</button>
+          </div>
+          <div class="child" id="c1">
+            <img
+              src="https://assets.pbimgs.com/pbimgs/ab/images/dp/ecm/202209/1386/001/028.jpg"
+              alt=""
+            />
+          </div>
+          <div class="child" id="c2">
+            <img
+              src="https://assets.pbimgs.com/pbimgs/ab/images/dp/ecm/202209/1386/001/008.jpg"
+              alt=""
+            />
+          </div>
+          <div class="child" id="c3">
+            <img
+              src="https://assets.pbimgs.com/pbimgs/ab/images/dp/ecm/202209/1386/001/018.jpg"
+              alt=""
+            />
+          </div>
+          <div class="child" id="c4">
+            <img
+              src="https://assets.pbimgs.com/pbimgs/ab/images/dp/ecm/202209/1386/001/005.jpg"
+              alt=""
+            />
+          </div>
+          <div class="child" id="c5">
+            <img
+              src="https://assets.pbimgs.com/pbimgs/ab/images/dp/ecm/202209/1386/001/027.jpg"
+              alt=""
+            />
+          </div>
+          <div class="child" id="c6">
+            <img
+              src="https://assets.pbimgs.com/pbimgs/ab/images/dp/ecm/202209/1386/001/004.jpg"
+              alt=""
+            />
+          </div>
+          <div class="child" id="c7">
+            <img
+              src="https://assets.pbimgs.com/pbimgs/ab/images/dp/ecm/202209/1386/001/025.jpg"
+              alt=""
+            />
+          </div>
+          <div class="child" id="c8">
+            <img
+              src="https://assets.pbimgs.com/pbimgs/ab/images/dp/ecm/202209/1386/001/002.jpg"
+              alt=""
+            />
+          </div>
+
+          <div id="rightarrow" onclick="moveright()">
+            <button>&lt;</button>
+          </div>
+        </div>
       </div>
 
       <div class="hp-image-full" id="hp-img-box">
@@ -279,11 +335,6 @@
       <div class="hp-image-full">
         <p>SHOP OUR PICKS</p>
       </div>
-
-      <div>
-        <!-- product slider here -->
-      </div>
-
       <div class="hp-image-full">
         <img
           src="https://assets.pbimgs.com/pbimgs/rk/images/dp/ecm/202143/1123/001/001.png"
@@ -345,3 +396,39 @@
 </html>
 
 <script type="module" src="/scripts/index.js"></script>
+<script>
+  let left = 1;
+  let right = 4;
+  function show() {
+    for (let i = 1; i < 5; i++) {
+      document.getElementById(`c${i}`).style.display = "inline-block";
+    }
+    // console.log(left,right);
+  }
+
+  function moveleft() {
+    if (right < 8 && left >= 1) {
+      //  console.log(left,right)
+      document.getElementById(`c${left}`).style.display = "none";
+      left++;
+      right++;
+      //  console.log(left,right)
+      document.getElementById(`c${right}`).style.display = "inline-block";
+    } else {
+      return;
+    }
+  }
+  function moveright() {
+    console.log("function called");
+    if (right <= 8 && left > 1) {
+      document.getElementById(`c${right}`).style.display = "none";
+      left--;
+      right--;
+
+      document.getElementById(`c${left}`).style.display = "inline-block";
+    } else {
+      left = 1;
+      right = 5;
+    }
+  }
+</script>
