@@ -40,7 +40,7 @@ let header = () => {
           <div class="user-links">
             <div class="separated-list">
               <div><i class="fas fa-user"></i></div>
-              <div class="hp-link">My Account</div>
+              <div class="hp-link"> <a href="user.html">My Account </a></div>
             </div>
             <div class="separated-list">
               <div><i class="fas fa-hand-holding-heart"></i></div>
@@ -48,7 +48,7 @@ let header = () => {
             </div>
             <div class="separated-list">
               <div><i class="fas fa-heart"></i></div>
-              <div class="hp-link">Favorites</div>
+              <div class="hp-link"><a href='cart.html'>Favorites</a></div>
             </div>
             <div class="separated-list">
               <div><i class="fas fa-shopping-cart"></i></div>

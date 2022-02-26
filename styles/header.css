@@ -177,11 +177,10 @@ li {
   top: 25px;
   left: 0;
   width: 100%;
-  /* height: 100vh; */
+  height: 100vh;
   background-color: white;
   z-index: 2;
-  margin: 0px 0 0px 0;
-  /* border: 2px solid green;  */
+  margin: 0;
   padding: 10px;
 }
 #header-nav-menu {
@@ -190,7 +189,7 @@ li {
   margin: 0;
   justify-content: center;
   width: 100%;
-  height: 22px;
+  height: 25px;
 }
 #header-nav-menu > li:hover > .dropdown {
   display: block;
