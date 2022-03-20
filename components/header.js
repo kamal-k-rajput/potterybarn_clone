@@ -40,7 +40,7 @@ let header = () => {
           <div class="user-links">
             <div class="separated-list">
               <div><i class="fas fa-user"></i></div>
-              <div class="hp-link"> <a href="src/user.html">My Account </a></div>
+              <div class="hp-link"> <a href="user.html">My Account </a></div>
             </div>
             <div class="separated-list">
               <div><i class="fas fa-hand-holding-heart"></i></div>
@@ -48,11 +48,11 @@ let header = () => {
             </div>
             <div class="separated-list">
               <div><i class="fas fa-heart"></i></div>
-              <div class="hp-link"><a href='src/cart.html'>Favorites</a></div>
+              <div class="hp-link"><a href='cart.html'>Favorites</a></div>
             </div>
             <div class="separated-list">
               <div><i class="fas fa-shopping-cart"></i></div>
-              <div class="hp-link"><a href='src/cart.html'>Cart</a></div>
+              <div class="hp-link"><a href='cart.html'>Cart</a></div>
             </div>
           </div>
         </div>
@@ -320,11 +320,11 @@ let header = () => {
           <div class="dropdown">
             <div class="nav-link-extended">
               <ul>
-                <p><a href="src/furniture.html">Living Room Furniture </a></p>
-                <li><a href="src/furniture.html">Sofa &amp; Sectional Collections </a></li>
-                <li><a href="src/furniture.html">Sectionals </a></li>
-                <li><a href="src/furniture.html">Sofas &amp; Loveseats </a></li>
-                <li><a href="src/furniture.html">Sleeper Sofas</a></li>
+                <p><a href="furniture.html">Living Room Furniture </a></p>
+                <li><a href="furniture.html">Sofa &amp; Sectional Collections </a></li>
+                <li><a href="furniture.html">Sectionals </a></li>
+                <li><a href="furniture.html">Sofas &amp; Loveseats </a></li>
+                <li><a href="furniture.html">Sleeper Sofas</a></li>
                 <li>Chairs</li>
                 <li>Leather Furniture</li>
                 <li>Coffee Tables</li>
@@ -409,10 +409,10 @@ let header = () => {
           <div class="dropdown">
             <div class="nav-link-extended">
               <ul>
-                <p><a href="src/outdoor.html">Outdoor Furniture Collections</a></p>
-                <li><a href="src/outdoor.html">Shop All Collections</a></li>
-                <p><a href="src/outdoor.html">Outdoor Lounge &amp; Accent Furniture </a></p>
-                <li><a href="src/outdoor.html">Sectionals</a> </li>
+                <p><a href="outdoor.html">Outdoor Furniture Collections</a></p>
+                <li><a href="outdoor.html">Shop All Collections</a></li>
+                <p><a href="outdoor.html">Outdoor Lounge &amp; Accent Furniture </a></p>
+                <li><a href="outdoor.html">Sectionals</a> </li>
                 <li>Sofas &amp; Loveseats</li>
                 <li>Lounge Chairs &amp; Ottomans</li>
                 <li>Chaises &amp; Daybeds</li>
