@@ -1,6 +1,6 @@
 const User = require("../models/user.models");
 const express = require("express");
-
+// const { body, validationResult } = require("express-validator");
 const router = express.Router();
 
 router.get("/", async (req, res) => {
@@ -15,6 +15,26 @@ router.get("/", async (req, res) => {
 router.get("/:id", async (req, res) => {
   try {
     let user = await User.find({ _id: req.params.id }).lean().exec();
+
+    res.status(200).send({ user: user });
+  } catch (err) {
+    res.status(404).send({ err: err.message });
+  }
+});
+router.patch("/:id", async (req, res) => {
+  try {
+    let user = await User.find({ _id: req.params.id }).lean().exec();
+
+    res.status(200).send({ user: user });
+  } catch (err) {
+    res.status(404).send({ err: err.message });
+  }
+});
+router.delete("/:id", async (req, res) => {
+  try {
+    let user = await User.findByIdAndDelete({ _id: req.params.id })
+      .lean()
+      .exec();
 
     res.status(200).send({ user: user });
   } catch (err) {
