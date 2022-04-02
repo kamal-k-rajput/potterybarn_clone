@@ -1,10 +1,10 @@
 // const { generateKey } = require("crypto");
 var jwt = require("jsonwebtoken");
 
-const User = require("../models/user.model");
+const User = require("../models/user.models");
 
 const generatetoken = (user) => {
-  return jwt.sign({ user }, "potterySecret");
+  return jwt.sign({ user }, SECRET_KEY);
 };
 const register = async (req, res) => {
   try {
