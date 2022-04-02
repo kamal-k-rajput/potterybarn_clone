@@ -1,6 +1,8 @@
-const express=require("express");
-const mongoose=require("mongoose");
+const express = require("express");
+const mongoose = require("mongoose");
 
-module.exprots=() =>{
-    return mongoose.connect("mongodb://127.0.0.1:27017/potterybarn");
-}
+module.exports = () => {
+  return mongoose.connect(
+    "mongodb+srv://kamalkishor:Kamak-1234@cluster0.pg1tz.mongodb.net/potterybarn-clone?retryWrites=true&w=majority"
+  );
+};
