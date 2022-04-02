@@ -6,7 +6,6 @@ const router = express.Router();
 router.get("/", async (req, res) => {
   try {
     let user = await User.find().lean().exec();
-
     res.status(200).send({ user: user });
   } catch (err) {
     res.status(404).send({ err: err.message });
@@ -15,7 +14,6 @@ router.get("/", async (req, res) => {
 router.get("/:id", async (req, res) => {
   try {
     let user = await User.find({ _id: req.params.id }).lean().exec();
-
     res.status(200).send({ user: user });
   } catch (err) {
     res.status(404).send({ err: err.message });
@@ -44,7 +42,7 @@ router.delete("/:id", async (req, res) => {
 
 router.post("/", async (req, res) => {
   try {
-    let user = User.create(req.body);
+    let user = User.create(req.body,{ new: true});
     res.status(200).send({ user: user });
   } catch (err) {
     res.status(404).send({ err: err.message });

@@ -5,6 +5,7 @@ const app = express();
 
 app.use(express.json());
 
-module.exports = app;
 app.use("/users", userController);
 app.use("/products", productController);
+
+module.exports = app;

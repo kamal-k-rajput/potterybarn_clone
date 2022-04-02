@@ -46,7 +46,7 @@ router.post(
       if (!errors.isEmpty()) {
         return res.status(400).json({ errors: errors.array() });
       }
-      const product = Product.create(req.body);
+      const product = Product.create(req.body, { new: true });
       res.status(200).send({ product: product });
     } catch (err) {
       res.status(404).send({ err: err.message });
