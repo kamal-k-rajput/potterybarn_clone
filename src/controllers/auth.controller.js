@@ -1,39 +1,37 @@
-// const { generateKey } = require("crypto");
-var jwt = require("jsonwebtoken");
-
 const User = require("../models/user.models");
-
-const generatetoken = (user) => {
-  return jwt.sign({ user }, SECRET_KEY);
+const jwt = require("jsonwebtoken");
+require("dotenv").config();
+const generateToken = (user) => {
+  return jwt.sign({ user }, process.env.SECRET_KEY);
 };
 const register = async (req, res) => {
   try {
-    const user = await User.findOne({ email: req.body.email });
+    let user = await User.findOne({ email: req.body.email }).lean().exec();
+    //checking email
     if (user) {
-      return res.status(400).send({ message: "Email already exist" });
+      return res.status(400).send({ message: "Email already exists" });
     }
-    user = await User.create(req, body);
-
-    const Token = token(user);
-    return res.status(200).send(user);
+    user = await User.create(req.body);
+    const token = generateToken(user);
+    return res.status(200).send({ user, token });
   } catch (err) {
     res.status(400).send({ message: err.message });
   }
 };
 const login = async (req, res) => {
   try {
-    const user = await User.findOne({ email: req.body.email });
+    const user = await User.findOne({ email: req.body.email }).lean().exec();
     if (!user) {
-      return res.status(400).send(err.message);
+      return res.status(400).send("Wrong Email or Password");
     }
-    const match = User.checkPassword(req.body.password);
+    const match = user.checkPassword(req.body.password);
     if (!match) {
-      return res.status(400).send("wrong password");
+      return res.status(400).send({ message: "Wrong Email or Password" });
     }
-    const Token = generatetoken(user);
-    return res.status(200).send({ user, Token });
+    const token = generateToken(user);
+    return res.status(200).send({ user, token });
   } catch (err) {
     res.status(400).send({ message: err.message });
   }
 };
-module.exports = { register, login };
+module.exports = { register, login, generateToken };
