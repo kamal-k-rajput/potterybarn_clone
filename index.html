@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pottery barn</title>
-    <link rel="stylesheet" href="/styles/index.css" />
-    <link rel="stylesheet" href="/styles/header.css" />
-    <link rel="stylesheet" href="/styles/footer.css" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
     <script
       src="https://kit.fontawesome.com/d3ed7b5523.js"
       crossorigin="anonymous"
@@ -33,7 +33,6 @@
               alt=""
             />
           </td>
-
           <td>
             <img
               src="https://assets.pbimgs.com/pbimgs/rk/images/dp/ecm/202206/0993/001/005.jpg"
@@ -99,7 +98,6 @@
       </div>
       <div class="hp-img-slider-container">
         <!-- image slider here -->
-        
       </div>
       <div class="hp-image-full">
         <img
@@ -158,7 +156,6 @@
         />
       </div>
       <div class="hp-image-full">
-       
         <div class="parent">
           <div id="leftarrow" onclick="moveleft()">
             <button>&lt;</button>
@@ -395,7 +392,7 @@
   </body>
 </html>
 
-<script type="module" src="/scripts/index.js"></script>
+<script type="module" src="/scripts/homepage.js"></script>
 <script>
   let left = 1;
   let right = 4;
@@ -419,7 +416,7 @@
     }
   }
   function moveright() {
-    console.log("function called");
+
     if (right <= 8 && left > 1) {
       document.getElementById(`c${right}`).style.display = "none";
       left--;
