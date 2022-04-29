@@ -31,9 +31,12 @@ Pottery Barn is a e-commerce site that provide home decorative items. America’
 * This is the image of outdoor category page of our site from here user can move to any outdoor section.
 *  ![Screenshot 2022-04-29 at 8 35 22 PM](https://user-images.githubusercontent.com/90085564/165971812-ea655265-e671-4b48-9043-844a2b13d967.png)
 
-* Outdoor Collections page![Screenshot 2022-04-29 at 8 36 15 PM (2)](https://user-images.githubusercontent.com/90085564/165971949-dbd85a1a-56ba-45a6-a872-eb8c2a525ae5.png)
+* <h2>Outdoor Collections page</h2>
+From here from own choice able to buy outdoor product and move that to the cart and proceed to checkout. 
+* ![Screenshot 2022-04-29 at 8 36 15 PM (2)](https://user-images.githubusercontent.com/90085564/165971949-dbd85a1a-56ba-45a6-a872-eb8c2a525ae5.png)
 
-* signup & login Page 
+* <h2>signup & login Page </h2>
+* From this page user can able to log in if already registred and sign up if its a new user.
 ![Screenshot 2022-04-29 at 8 36 49 PM (2)](https://user-images.githubusercontent.com/90085564/165972022-9194221d-5389-4df9-8e0e-d047028ea1a8.png)
 
 
