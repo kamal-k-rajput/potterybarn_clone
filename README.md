@@ -8,17 +8,28 @@ Pottery Barn is a e-commerce site that provide home decorative items. America’
 
 ## Pages Build
 
-* Landing Page![Screenshot 2022-04-29 at 8 31 51 PM](https://user-images.githubusercontent.com/90085564/165971127-f9681164-ed27-4a21-a81e-c46d35a5aab3.png)
+* Landing Page
+* This is the lending page of potterybarn clone website. Here all the possible options available that user want to see our website using hover on the navbar as you can see in secong image. 
+* ![Screenshot 2022-04-29 at 8 31 51 PM](https://user-images.githubusercontent.com/90085564/165971127-f9681164-ed27-4a21-a81e-c46d35a5aab3.png)
+
+
+
 ![Screenshot 2022-04-29 at 8 31 40 PM](https://user-images.githubusercontent.com/90085564/165971151-bc45467d-cad6-4065-b286-bb59e011cef3.png)
 
 
-* Furniture page Page![Screenshot 2022-04-29 at 8 32 57 PM](https://user-images.githubusercontent.com/90085564/165971316-10228b0a-3e3d-41f8-8df7-cdb0006f4b7b.png)
+* <h2>Furniture page Page</h2>
+* This is the image of product page of our site so that user choose any category of furniture that They want to purchace or visit. 
+* ![Screenshot 2022-04-29 at 8 32 57 PM](https://user-images.githubusercontent.com/90085564/165971316-10228b0a-3e3d-41f8-8df7-cdb0006f4b7b.png)
 
 
-* Sofa and Sectorial Collections Page![Screenshot 2022-04-29 at 8 33 46 PM](https://user-images.githubusercontent.com/90085564/165971555-7c5927b5-098b-4233-8483-1b370019180d.png)
+* <h2>Sofa and Sectorial Collections Page</h2>
+* This is the main product page from this page user can add our favorite item to cart or move to wish list so that from the cart Then can easily buy.
+* ![Screenshot 2022-04-29 at 8 33 46 PM](https://user-images.githubusercontent.com/90085564/165971555-7c5927b5-098b-4233-8483-1b370019180d.png)
 
 
-* Outdoor LOUNGE AND ACCENT FURNITURE PAGE![Screenshot 2022-04-29 at 8 35 22 PM](https://user-images.githubusercontent.com/90085564/165971812-ea655265-e671-4b48-9043-844a2b13d967.png)
+* <h2>Outdoor LOUNGE AND ACCENT FURNITURE PAGE</h2>
+* This is the image of outdoor category page of our site from here user can move to any outdoor section.
+*  ![Screenshot 2022-04-29 at 8 35 22 PM](https://user-images.githubusercontent.com/90085564/165971812-ea655265-e671-4b48-9043-844a2b13d967.png)
 
 * Outdoor Collections page![Screenshot 2022-04-29 at 8 36 15 PM (2)](https://user-images.githubusercontent.com/90085564/165971949-dbd85a1a-56ba-45a6-a872-eb8c2a525ae5.png)
 
